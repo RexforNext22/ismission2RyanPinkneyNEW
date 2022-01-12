@@ -17,9 +17,15 @@ $("#cal").click(function () {
     // Calculate the grade percent
     fPercent = (iAssignment * .55) + (iGroupProject * .05) + (iQuizzes * .10) + (iExams * .20) + (iINTEX * .10)
 
-    //Initalize the output varaible
-    sLetterGrade = ""
 
+    //Round the file grade
+
+    fPercent = Math.round(fPercent * 100) / 100
+
+
+    //Initalize the output varaible
+
+    sLetterGrade = ""
 
 
     // This if statement will determine the letter grade for the percentage
