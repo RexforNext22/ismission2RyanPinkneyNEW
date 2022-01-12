@@ -18,7 +18,7 @@ $("#cal").click(function () {
     fPercent = (iAssignment * .55) + (iGroupProject * .05) + (iQuizzes * .10) + (iExams * .20) + (iINTEX * .10)
 
 
-    //Round the file grade
+    //Round the final grade
 
     fPercent = Math.round(fPercent * 100) / 100
 
